@@ -1,0 +1,11 @@
+server:
+#  配置项目名称
+  servlet:
+    context-path: /api
+  port: 8000
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf
+    username: root
+    password: useradmin
+    driver-class-name: com.mysql.cj.jdbc.Driver
