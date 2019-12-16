@@ -11,3 +11,8 @@ spring:
     username: root
     password: useradmin
     driver-class-name: com.mysql.cj.jdbc.Driver
+logging:
+  level:
+    root: info
+  file:
+    name: ./logs/system.log

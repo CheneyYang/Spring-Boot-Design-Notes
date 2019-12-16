@@ -1,0 +1,19 @@
+2019-12-17 07:04:49.025  INFO 636 --- [restartedMain] com.github.example.ExampleApplication    : Starting ExampleApplication on DESKTOP-3UA57L2 with PID 636 (D:\GitRepository\Spring-Boot-Design-Notes\target\classes started by Yanggc in D:\GitRepository\Spring-Boot-Design-Notes)
+2019-12-17 07:04:49.027  INFO 636 --- [restartedMain] com.github.example.ExampleApplication    : The following profiles are active: user
+2019-12-17 07:04:49.074  INFO 636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-17 07:04:49.074  INFO 636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-17 07:04:49.455  WARN 636 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.github.example]' package. Please check your configuration.
+2019-12-17 07:04:49.692  INFO 636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2019-12-17 07:04:49.698  INFO 636 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-17 07:04:49.698  INFO 636 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-17 07:04:49.766  INFO 636 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2019-12-17 07:04:49.766  INFO 636 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 692 ms
+2019-12-17 07:04:49.880  INFO 636 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-17 07:04:49.975  INFO 636 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-17 07:04:50.002  INFO 636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path '/api'
+2019-12-17 07:04:50.004  INFO 636 --- [restartedMain] com.github.example.ExampleApplication    : Started ExampleApplication in 1.271 seconds (JVM running for 1.901)
+2019-12-17 07:05:25.204  INFO 636 --- [http-nio-8000-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-17 07:05:25.204  INFO 636 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-17 07:05:25.208  INFO 636 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2019-12-17 07:05:25.220  INFO 636 --- [http-nio-8000-exec-2] com.github.example.controller.User       : pictureHost-ip: 127.0.0.1pictureHost-port: 8100
+                                                                                                 2019-12-17 07:05:25.221  INFO 636 --- [http-nio-8000-exec-2] com.github.example.controller.User       : videoHost-ip: 127.0.0.1videoHost-port: 8101
