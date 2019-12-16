@@ -50,6 +50,11 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <!--使用log4j2-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
+        </dependency>
         <!--mysql驱动包-->
         <dependency>
             <groupId>mysql</groupId>

@@ -1,0 +1,8 @@
+#参数和配置项之间要有空格
+userconfig:
+  pictureHost:
+    ip: 127.0.0.1
+    port: 8100
+  videoHost:
+    ip: 127.0.0.1
+    port: 8101
