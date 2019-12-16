@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @ConfigurationProperties("userconfig")
-public class UserConfig {
+public class UserProperties {
     private PictureHost pictureHost =  new PictureHost();
     private VideoHost videoHost =  new VideoHost();
 
@@ -27,8 +27,7 @@ public class UserConfig {
     }
 
 
-
-
+    //内部类，配置较多的情况下可以写开
     public class PictureHost{
         private String ip;
         private int port;

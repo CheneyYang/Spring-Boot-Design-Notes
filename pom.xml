@@ -50,6 +50,12 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <!--Springboot 自定义配置包 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
         <!--使用log4j2-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
