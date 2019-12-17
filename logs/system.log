@@ -17,3 +17,130 @@
 2019-12-17 07:05:25.208  INFO 636 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
 2019-12-17 07:05:25.220  INFO 636 --- [http-nio-8000-exec-2] com.github.example.controller.User       : pictureHost-ip: 127.0.0.1pictureHost-port: 8100
                                                                                                  2019-12-17 07:05:25.221  INFO 636 --- [http-nio-8000-exec-2] com.github.example.controller.User       : videoHost-ip: 127.0.0.1videoHost-port: 8101
+2019-12-17 15:10:31.405  INFO 17176 --- [restartedMain] com.github.example.ExampleApplication    : Starting ExampleApplication on DESKTOP-B50P1FQ with PID 17176 (D:\GitRespository\Spring-Boot-Design-Notes\target\classes started by Cheney in D:\GitRespository\Spring-Boot-Design-Notes)
+2019-12-17 15:10:31.409  INFO 17176 --- [restartedMain] com.github.example.ExampleApplication    : The following profiles are active: user
+2019-12-17 15:10:31.482  INFO 17176 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-17 15:10:31.482  INFO 17176 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-17 15:10:32.044  WARN 17176 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'adminMapper' and 'com.github.example.dao.mysql.AdminMapper' mapperInterface. Bean already defined with the same name!
+2019-12-17 15:10:32.044  WARN 17176 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.github.example.dao.sqlserver.UserMapper' mapperInterface. Bean already defined with the same name!
+2019-12-17 15:10:32.044  WARN 17176 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.github.example]' package. Please check your configuration.
+2019-12-17 15:10:32.337  INFO 17176 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2019-12-17 15:10:32.344  INFO 17176 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-17 15:10:32.344  INFO 17176 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-17 15:10:32.410  INFO 17176 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2019-12-17 15:10:32.410  INFO 17176 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 928 ms
+2019-12-17 15:10:32.755 ERROR 17176 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : Failed to load driver class com.microsoft.sqlserver.jdbc.SQLServerDriver from HikariConfig class classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+2019-12-17 15:10:32.758  WARN 17176 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'SqlServerDataSource': Could not bind properties to 'DataSource' : prefix=spring.datasource.sqlserver, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.datasource.sqlserver' to javax.sql.DataSource
+2019-12-17 15:10:32.761  INFO 17176 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-12-17 15:10:32.769  INFO 17176 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-17 15:10:32.773 ERROR 17176 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.datasource.sqlserver' to javax.sql.DataSource:
+
+    Property: spring.datasource.sqlserver.driver-class-name
+    Value: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    Origin: class path resource [application.yml]:19:26
+    Reason: Failed to load driver class com.microsoft.sqlserver.jdbc.SQLServerDriver in either of HikariConfig class loader or Thread context classloader
+
+Action:
+
+Update your application's configuration
+
+2019-12-17 15:12:58.064  INFO 10652 --- [restartedMain] com.github.example.ExampleApplication    : Starting ExampleApplication on DESKTOP-B50P1FQ with PID 10652 (D:\GitRespository\Spring-Boot-Design-Notes\target\classes started by Cheney in D:\GitRespository\Spring-Boot-Design-Notes)
+2019-12-17 15:12:58.067  INFO 10652 --- [restartedMain] com.github.example.ExampleApplication    : The following profiles are active: user
+2019-12-17 15:12:58.152  INFO 10652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-17 15:12:58.153  INFO 10652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-17 15:12:58.787  WARN 10652 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'adminMapper' and 'com.github.example.dao.mysql.AdminMapper' mapperInterface. Bean already defined with the same name!
+2019-12-17 15:12:58.787  WARN 10652 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.github.example.dao.sqlserver.UserMapper' mapperInterface. Bean already defined with the same name!
+2019-12-17 15:12:58.787  WARN 10652 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.github.example]' package. Please check your configuration.
+2019-12-17 15:12:59.089  INFO 10652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2019-12-17 15:12:59.096  INFO 10652 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-17 15:12:59.097  INFO 10652 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-17 15:12:59.160  INFO 10652 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2019-12-17 15:12:59.161  INFO 10652 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1007 ms
+2019-12-17 15:12:59.336 ERROR 10652 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : Failed to load driver class com.microsoft.sqlserver.jdbc.SQLServerDriver from HikariConfig class classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+2019-12-17 15:12:59.339  WARN 10652 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'SqlServerDataSource': Could not bind properties to 'DataSource' : prefix=spring.datasource.sqlserver, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.datasource.sqlserver' to javax.sql.DataSource
+2019-12-17 15:12:59.341  INFO 10652 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-12-17 15:12:59.350  INFO 10652 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-17 15:12:59.354 ERROR 10652 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.datasource.sqlserver' to javax.sql.DataSource:
+
+    Property: spring.datasource.sqlserver.driver-class-name
+    Value: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    Origin: class path resource [application.yml]:19:26
+    Reason: Failed to load driver class com.microsoft.sqlserver.jdbc.SQLServerDriver in either of HikariConfig class loader or Thread context classloader
+
+Action:
+
+Update your application's configuration
+
+2019-12-17 15:19:28.853  INFO 2748 --- [restartedMain] com.github.example.ExampleApplication    : Starting ExampleApplication on DESKTOP-B50P1FQ with PID 2748 (D:\GitRespository\Spring-Boot-Design-Notes\target\classes started by Cheney in D:\GitRespository\Spring-Boot-Design-Notes)
+2019-12-17 15:19:28.857  INFO 2748 --- [restartedMain] com.github.example.ExampleApplication    : The following profiles are active: user
+2019-12-17 15:19:28.932  INFO 2748 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-17 15:19:28.933  INFO 2748 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-17 15:19:29.517  WARN 2748 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'adminMapper' and 'com.github.example.dao.mysql.AdminMapper' mapperInterface. Bean already defined with the same name!
+2019-12-17 15:19:29.517  WARN 2748 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.github.example.dao.sqlserver.UserMapper' mapperInterface. Bean already defined with the same name!
+2019-12-17 15:19:29.517  WARN 2748 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.github.example]' package. Please check your configuration.
+2019-12-17 15:19:29.823  INFO 2748 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2019-12-17 15:19:29.831  INFO 2748 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-17 15:19:29.831  INFO 2748 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-17 15:19:29.898  INFO 2748 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2019-12-17 15:19:29.898  INFO 2748 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 965 ms
+2019-12-17 15:19:30.063 ERROR 2748 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : Failed to load driver class com.microsoft.sqlserver.jdbc.SQLServerDriver from HikariConfig class classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+2019-12-17 15:19:30.066  WARN 2748 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'SqlServerDataSource': Could not bind properties to 'DataSource' : prefix=spring.datasource.sqlserver, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.datasource.sqlserver' to javax.sql.DataSource
+2019-12-17 15:19:30.068  INFO 2748 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-12-17 15:19:30.077  INFO 2748 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-17 15:19:30.081 ERROR 2748 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.datasource.sqlserver' to javax.sql.DataSource:
+
+    Property: spring.datasource.sqlserver.driver-class-name
+    Value: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    Origin: class path resource [application.yml]:19:26
+    Reason: Failed to load driver class com.microsoft.sqlserver.jdbc.SQLServerDriver in either of HikariConfig class loader or Thread context classloader
+
+Action:
+
+Update your application's configuration
+
+2019-12-17 15:39:45.633  INFO 996 --- [restartedMain] com.github.example.ExampleApplication    : Starting ExampleApplication on DESKTOP-B50P1FQ with PID 996 (D:\GitRespository\Spring-Boot-Design-Notes\target\classes started by Cheney in D:\GitRespository\Spring-Boot-Design-Notes)
+2019-12-17 15:39:45.638  INFO 996 --- [restartedMain] com.github.example.ExampleApplication    : The following profiles are active: user
+2019-12-17 15:39:45.719  INFO 996 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-17 15:39:45.720  INFO 996 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-17 15:39:46.363  WARN 996 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'adminMapper' and 'com.github.example.dao.mysql.AdminMapper' mapperInterface. Bean already defined with the same name!
+2019-12-17 15:39:46.364  WARN 996 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.github.example.dao.sqlserver.UserMapper' mapperInterface. Bean already defined with the same name!
+2019-12-17 15:39:46.364  WARN 996 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.github.example]' package. Please check your configuration.
+2019-12-17 15:39:46.697  INFO 996 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2019-12-17 15:39:46.705  INFO 996 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-17 15:39:46.705  INFO 996 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-17 15:39:46.793  INFO 996 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2019-12-17 15:39:46.794  INFO 996 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1073 ms
+2019-12-17 15:39:47.211  INFO 996 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-17 15:39:47.328  INFO 996 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-17 15:39:47.370  INFO 996 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path '/api'
+2019-12-17 15:39:47.374  INFO 996 --- [restartedMain] com.github.example.ExampleApplication    : Started ExampleApplication in 2.24 seconds (JVM running for 3.256)
