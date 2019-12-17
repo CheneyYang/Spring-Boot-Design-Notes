@@ -7,10 +7,22 @@ spring:
   profiles:
     active: user
   datasource:
-    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf
-    username: root
-    password: useradmin
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    mysql:
+      url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf
+      username: root
+      password: useradmin
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    sqlserver:
+      url: jdbc:sqlserver://localhost:1433;DatabaseName=wande
+        username: root
+        password: useradmin
+        driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+#Sql打印日志
+mybatis:
+  mapper-locations: classpath*:mappers/*Mapper.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 logging:
   level:
     root: info
