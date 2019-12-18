@@ -63,13 +63,14 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
         <!--sqlserver 驱动包 -->
-        <dependency>
-            <groupId>com.microsoft.sqlserver</groupId>
-            <artifactId>sqljdbc4</artifactId>
-            <version>4.0</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.microsoft.sqlserver</groupId>-->
+<!--            <artifactId>sqljdbc4</artifactId>-->
+<!--            <version>4.0</version>-->
+<!--        </dependency>-->
     </dependencies>
 
+    <!--相关编译依赖-->
     <build>
         <plugins>
             <plugin>

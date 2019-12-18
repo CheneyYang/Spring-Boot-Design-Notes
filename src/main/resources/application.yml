@@ -12,11 +12,11 @@ spring:
       username: root
       password: useradmin
       driver-class-name: com.mysql.cj.jdbc.Driver
-    sqlserver:
-      url: jdbc:sqlserver://localhost:1433;DatabaseName=wande
-      username: root
-      password: useradmin
-      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+#    sqlserver:
+#      url: jdbc:sqlserver://localhost:1433;DatabaseName=wande
+#      username: root
+#      password: useradmin
+#      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
 
 #Sql打印日志
 mybatis:
