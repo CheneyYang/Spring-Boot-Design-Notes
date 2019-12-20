@@ -50,13 +50,6 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <!--Springboot 自定义配置包 -->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-configuration-processor</artifactId>-->
-<!--            <optional>true</optional>-->
-<!--        </dependency>-->
-<!--        &lt;!&ndash;使用log4j2&ndash;&gt;-->
         <!--mysql驱动包-->
         <dependency>
             <groupId>mysql</groupId>
@@ -70,7 +63,7 @@
 <!--        </dependency>-->
     </dependencies>
 
-    <!--相关编译依赖-->
+    <!--相关编译打包依赖-->
     <build>
         <plugins>
             <plugin>
