@@ -1,6 +1,5 @@
 package com.github.example.config;
 
-import com.github.example.utils.UrlUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;
@@ -27,17 +26,22 @@ public class CorsConfig implements Filter {
         response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");
 //        response.setHeader("Access-Control-Max-Age", "3600");
         response.setHeader("Access-Control-Allow-Headers", "x-requested-with");
-        String servletPath = request.getServletPath();
-        logger.warn("加密前"+servletPath);
-        String s = UrlUtil.enCryptAndEncode(servletPath);
-        System.out.println("加密后"+s);
-        String s1 = null;
-        try {
-            s1 = UrlUtil.deCryptAndDecode(s);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        logger.warn("解密后"+s1);
+//        String servletPath = request.getServletPath();
+//        logger.warn("加密前"+servletPath);
+//        String s = UrlUtil.enCryptAndEncode(servletPath);
+//        System.out.println("加密后"+s);
+//        String s1 = null;
+//        try {
+//            s1 = UrlUtil.deCryptAndDecode(s);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        logger.warn("解密后"+s1);
+
+
+
+
+
 
         filterChain.doFilter(servletRequest, servletResponse);
     }
