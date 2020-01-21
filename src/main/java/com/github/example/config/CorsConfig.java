@@ -24,7 +24,7 @@ public class CorsConfig implements Filter {
         HttpServletResponse response = (HttpServletResponse) servletResponse;
         response.setHeader("Access-Control-Allow-Origin", "*");
         response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");
-//        response.setHeader("Access-Control-Max-Age", "3600");
+        response.setHeader("Access-Control-Max-Age", "3600");
         response.setHeader("Access-Control-Allow-Headers", "x-requested-with");
 //        String servletPath = request.getServletPath();
 //        logger.warn("加密前"+servletPath);

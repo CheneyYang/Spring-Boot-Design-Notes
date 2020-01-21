@@ -5,11 +5,14 @@ import io.jsonwebtoken.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.ServletRequest;
 import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
 import java.util.Date;
 
 
@@ -86,6 +89,11 @@ public class User {
         return "urlCrypt";
     }
 
+    @RequestMapping("/push/{toUserIP}")
+    public ResponseEntity<String> pushToWeb(String message, @PathVariable String toUserIP) throws IOException {
+        WebSocketServer.sendInfo("发送测试消息............",toUserIP);
+        return ResponseEntity.ok("MSG SEND SUCCESS");
+    }
 
 
 
